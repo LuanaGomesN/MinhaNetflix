@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MinhaNetflix" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <!-- A ColorPrimary é a cor principal do app,
+        é a cor que mais aparece na interace
+         Ao inicio ela pode ate chamar atenção, mas como esta presente em muitos elementos,
+         acaba se tornando normal para o olhar do usuario
+         ex: toolbar, botoes floatin action, barra de progresso, caixa de texto -->
+
+        <item name="colorPrimary">@color/primaria</item>
+
+        <!--colorPrimaryVariant cor de variação, normalmente mas escura
+        e tem função de servir como apoio visual e dar contrste.
+        Ela é usada principalmnee em areas que precisam de diferenciação em relação a cor
+        principal com a barra de status e superficie elevadas,
+        que representam camada superiores ou efeitos de profundidade-->
+
+        <item name="colorPrimaryVariant">@color/primaria_variacao</item>
+
+        <!-- ColorSecondary é utilizada para destacar elementos importantes ou interativos deferentes
+        da cor primaria, ela não aparece com frequencia, justamente por isso, consegue chamar atenção.
+        É a cor que puxa o olhar do usuario, sendo ideal para indicar ações ou elementos que precisam ser percebidos rapidamente.
+         ex: botao cancelar, botao voltar, botao pular -->
+
+        <item name="colorSecondary">@color/secundaria</item>
+
+        <!-- cor da barra status-->
+        <!-- ?attr em vez de apontar para uma cor especifica, a referencia e feita a um atributo de tema.
+        Quando a aplicação e executada, o android verifica o tema aivo (por exeplo modo claro ou escuro)-->
+
+
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:windowBackground">@color/black</item>
+
+    </style>
+
+    <style name="Theme.MinhaNetflix" parent="Base.Theme.MinhaNetflix" />
+</resources>
